@@ -36,9 +36,10 @@ const FAQItem = ({ question, answer }) => {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-indigo-500/30 font-sans">
+    <div className="min-h-screen bg-black text-white selection:bg-indigo-500/30 font-sans overflow-x-hidden">
       <Head>
         <title>Siiday - Aesthetic Habit Tracking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Build consistency with the most aesthetic habit tracker on the web." />
       </Head>
 
@@ -79,7 +80,7 @@ export default function LandingPage() {
             <Zap className="h-4 w-4 text-indigo-400" />
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-400/80">Launch Edition</span>
           </div>
-          <h1 className="mb-6 max-w-4xl text-5xl font-black leading-[1.1] tracking-[-0.05em] sm:text-7xl md:text-8xl">
+          <h1 className="mb-6 max-w-4xl text-4xl font-black leading-[1.1] tracking-[-0.05em] sm:text-7xl md:text-8xl">
             Build Consistency,<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-emerald-400">
               Beautifully.
