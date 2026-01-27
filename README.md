@@ -1,40 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ⚡ Siiday - Your Aesthetic Habit Tracker
 
-## Getting Started
+**Siiday** is a modern, high-performance habit tracking application designed to help you build consistency through beautiful data visualization and social accountability. Unlike complex productivity tools, Siiday focuses on keeping you in the flow with a sleek, dark-mode-first interface.
 
-First, run the development server:
+![Siiday Dashboard](https://github.com/kadeksinduarta/Siiday-frontend/blob/main/screenshot-dashboard.png?raw=true)
+*(Note: Upload a screenshot of your dashboard to your repo and update this link)*
 
+## ✨ Key Features
+
+- **Weekly Habit Grid**: A clean, focused view of your week. Check off habits for "today" only to maintain integrity and focus.
+- **One-Click Management**: Add, edit, and delete habits instantly with a smooth modal interface.
+- **Habit Velocity Trends**: Visualize your momentum with a real-time line chart showing your consistency over the last 30 days.
+- **Smart Analytics**: Track your "Daily Score", current streak, total completions, and weekly consistency percentage.
+- **Social-Ready Share Cards**: Generate stunning, high-resolution (1080x1920) images of your weekly progress, perfect for sharing on Instagram Stories or WhatsApp Status.
+- **Optimized for Mobile**: Responsive design that works perfectly on desktop and mobile browsers.
+
+## 🛠 Tech Stack
+
+**Frontend:**
+- **Framework**: [Next.js](https://nextjs.org/) (React)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Image Generation**: `html-to-image`
+
+**Backend:**
+- **Framework**: [Laravel](https://laravel.com/) (PHP)
+- **Database**: MySQL
+- **Authentication**: Laravel Sanctum / Socialite (Google Auth)
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+- Node.js (v18+)
+- PHP (v8.1+) & Composer
+- MySQL Database
+
+### Installation
+
+#### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/kadeksinduarta/Siiday-frontend.git
+cd Siiday-frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 2. Backend Setup (Laravel)
+Navigate to the backend directory (if separate, or within the project structure):
+```bash
+cd backend
+composer install
+cp .env.example .env
+php artisan key:generate
+```
+Configure your database credentials in `.env`, then run migrations:
+```bash
+php artisan migrate
+```
+Start the backend server:
+```bash
+php artisan serve
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### 3. Frontend Setup (Next.js)
+Navigate to the frontend directory:
+```bash
+cd frontend
+npm install
+```
+Start the frontend development server:
+```bash
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Weekly Recap Card
+Share your wins with a generated card that looks like this:
+*(You can add a screenshot of the share card here)*
 
-## Learn More
+## 🤝 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please fork this repository and submit a pull request for any features, bug fixes, or enhancements.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
