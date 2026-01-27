@@ -61,8 +61,8 @@ export default function Login() {
 
             <div className="max-w-md w-full p-8 bg-zinc-900 border border-zinc-800 rounded-2xl shadow-xl">
                 <div className="flex justify-center mb-6">
-                    <div className="p-3 bg-indigo-500/10 rounded-xl">
-                        <LayoutGrid className="w-8 h-8 text-indigo-500" />
+                    <div className="p-3 bg-zinc-800/50 rounded-xl border border-zinc-700/50">
+                        <img src="/logo-siiday.png" alt="Siiday Logo" className="w-10 h-10 object-contain" />
                     </div>
                 </div>
 

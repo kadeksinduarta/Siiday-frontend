@@ -138,8 +138,8 @@ export default function WeeklyRecap() {
                                         {stats.start_date} — {stats.end_date}
                                     </div>
                                 </div>
-                                <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                                    <span className="font-black text-white text-[10px] tracking-tighter">SD</span>
+                                <div className="w-8 h-8 bg-zinc-900 border border-white/10 rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
+                                    <img src="/logo-siiday.png" alt="SD" className="w-5 h-5 object-contain" />
                                 </div>
                             </div>
 

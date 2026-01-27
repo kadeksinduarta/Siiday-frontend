@@ -51,9 +51,14 @@ export default function Dashboard() {
             </Head>
 
             <div className="flex justify-between items-center mb-8">
-                <div>
-                    <h1 className="text-3xl font-bold">Dashboard</h1>
-                    <p className="text-zinc-400">Welcome back, {user?.name}!</p>
+                <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-center overflow-hidden">
+                        <img src="/logo-siiday.png" alt="Siiday Logo" className="w-8 h-8 object-contain" />
+                    </div>
+                    <div>
+                        <h1 className="text-3xl font-bold">Dashboard</h1>
+                        <p className="text-zinc-400">Welcome back, {user?.name}!</p>
+                    </div>
                 </div>
                 <button
                     onClick={handleLogout}
