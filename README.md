@@ -73,7 +73,7 @@ Start the frontend development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [https://siiday.sinduarta.my.id/] in your browser.
 
 ## 📸 Screenshots
 
